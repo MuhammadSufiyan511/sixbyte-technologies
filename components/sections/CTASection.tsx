@@ -17,8 +17,8 @@ interface CTASectionProps {
 }
 
 export default function CTASection({
-  title = 'Ready to give your business a more credible online presence?',
-  subtitle = 'Let us help you turn a good-looking website into a thoughtful digital front door that builds trust and encourages action.',
+  title = 'Ready to bring your digital vision to life?',
+  subtitle = 'Let us help you turn your ideas into polished digital products that build trust and drive results.',
   primaryCta = 'Book a free consultation',
   primaryHref = '/contact',
   showWhatsapp = true,

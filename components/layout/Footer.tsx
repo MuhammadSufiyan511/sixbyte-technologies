@@ -4,12 +4,12 @@ import { Mail, Phone, MapPin, MessageCircle, Linkedin, Instagram, Facebook } fro
 import { siteConfig } from '@/lib/site'
 
 const serviceLinks = [
-  { label: 'Website Development', href: '/services#web-dev' },
-  { label: 'E-commerce Solutions', href: '/services#ecommerce' },
-  { label: 'Industry Systems', href: '/services#industry-systems' },
-  { label: 'Maintenance & Support', href: '/services#maintenance' },
-  { label: 'WhatsApp Integration', href: '/services#lead-integration' },
-  { label: 'SEO & Marketing', href: '/services#seo' },
+  { label: 'Custom Web Development', href: '/services/web-dev' },
+  { label: 'Mobile App Development', href: '/services/mobile-apps' },
+  { label: 'SaaS Product Development', href: '/services/saas' },
+  { label: 'E-commerce & Shopify', href: '/services/shopify' },
+  { label: 'Custom Software Solutions', href: '/services/custom-software' },
+  { label: 'AI Solutions', href: '/services/ai-solutions' },
 ]
 
 const companyLinks = [

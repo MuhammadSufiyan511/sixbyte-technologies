@@ -8,9 +8,9 @@ const buildLine = (offset: number) =>
   services.map((s) => s.title).concat(services.slice(0, offset).map((s) => s.title))
 
 const rows = [
-  { direction: 1, speed: 54, text: buildLine(0) },
-  { direction: -1, speed: 48, text: buildLine(3) },
-  { direction: 1, speed: 60, text: buildLine(6) },
+  { direction: 1, speed: 90, text: buildLine(0) },
+  { direction: -1, speed: 80, text: buildLine(3) },
+  { direction: 1, speed: 100, text: buildLine(6) },
 ]
 
 const KineticRow = memo(function KineticRow({

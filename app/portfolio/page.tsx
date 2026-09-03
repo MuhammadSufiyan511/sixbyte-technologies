@@ -182,7 +182,7 @@ export default function PortfolioPage({ searchParams }: PortfolioPageProps) {
               <div className="flex items-center gap-2">
                 <Link
                   href={buildPageHref(Math.max(1, currentPage - 1))}
-                  scroll={false}
+                  scroll={true}
                   aria-disabled={currentPage === 1}
                   className={`rounded border px-3 py-1.5 text-xs font-semibold transition-colors ${
                     currentPage === 1
@@ -197,7 +197,7 @@ export default function PortfolioPage({ searchParams }: PortfolioPageProps) {
                   <Link
                     key={page}
                     href={buildPageHref(page)}
-                    scroll={false}
+                    scroll={true}
                     className={`min-w-8 rounded border px-3 py-1.5 text-center text-xs font-semibold transition-colors ${
                       page === currentPage
                         ? 'border-navy bg-navy text-white dark:border-teal dark:bg-teal'
@@ -210,7 +210,7 @@ export default function PortfolioPage({ searchParams }: PortfolioPageProps) {
 
                 <Link
                   href={buildPageHref(Math.min(totalPages, currentPage + 1))}
-                  scroll={false}
+                  scroll={true}
                   aria-disabled={currentPage === totalPages}
                   className={`rounded border px-3 py-1.5 text-xs font-semibold transition-colors ${
                     currentPage === totalPages
@@ -228,7 +228,7 @@ export default function PortfolioPage({ searchParams }: PortfolioPageProps) {
 
       <CTASection
         title="Like what you see? Let&apos;s build something similar for your business."
-        subtitle="We can help translate your goals into a cleaner, more effective web presence."
+        subtitle="We can help translate your goals into a cleaner, more effective digital presence."
       />
     </>
   )

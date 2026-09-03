@@ -107,7 +107,7 @@ export default function ContactClient() {
     <>
       <PageHero
         tag="Contact"
-        title="Let&apos;s talk about how to make your website feel more credible and more effective."
+        title="Let&apos;s talk about how to make your digital presence feel more credible and more effective."
         subtitle="Share a little about your business and we&apos;ll help you figure out the next step with clarity and honesty."
         chips={['Consultation', 'Support', 'WhatsApp']}
         panelTitle="What to expect"
@@ -324,7 +324,7 @@ export default function ContactClient() {
                       value={form.message}
                       onChange={handleChange}
                       rows={5}
-                      placeholder="Describe your business, your goals, and what you would like the website to do."
+                      placeholder="Describe your business, your goals, and what you would like us to build."
                       className={`w-full resize-none rounded border bg-white px-3.5 py-2.5 text-xs outline-none transition-colors focus:border-teal dark:border-slate-800 dark:bg-slate-900 dark:text-white ${
                         errors.message ? 'border-red-500' : 'border-slate-200'
                       }`}

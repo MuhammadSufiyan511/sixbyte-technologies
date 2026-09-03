@@ -13,7 +13,7 @@ const values = [
   {
     icon: Target,
     title: 'Business first thinking',
-    description: 'Every decision should help the website do a real job for the business, not just look impressive.',
+    description: 'Every decision should help the product do a real job for the business, not just look impressive.',
   },
   {
     icon: HeartHandshake,
@@ -36,7 +36,7 @@ const milestones = [
   {
     year: '2019',
     title: 'Started with a simple idea',
-    description: 'Build websites that feel more credible, more strategic, and more useful to growing businesses.',
+    description: 'Build digital solutions that feel more credible, more strategic, and more useful to growing businesses.',
   },
   {
     year: '2021',
@@ -154,7 +154,7 @@ export default function AboutPage() {
       <PageHero
         tag="About our team"
         title="A small team with a clear goal: help businesses show up online with more clarity and confidence."
-        subtitle="SixByte Technologies was built around one idea: your website should feel like a trustworthy extension of your business. We care about the tone, the structure, the details, and the way everything comes together to support real growth."
+        subtitle="SixByte Technologies was built around one idea: your digital product should feel like a trustworthy extension of your business. We care about the tone, the structure, the details, and the way everything comes together to support real growth."
         chips={['Strategy', 'Design', 'Build']}
         panelTitle="How we work"
         panelBody="We keep the process collaborative and the result practical so the final site feels useful, not inflated."
@@ -169,7 +169,7 @@ export default function AboutPage() {
               <Reveal>
                 <SectionHeader
                   tag="Our mission"
-                  title="Make business websites feel more human, more useful, and more trusted."
+                  title="Make digital products feel more human, more useful, and more trusted."
                   subtitle="We want visitors to feel clear on who you are, what you offer, and why you are the right team to contact."
                 />
               </Reveal>
