@@ -13,9 +13,9 @@ import TestimonialsSection from '@/components/sections/TestimonialsSection'
 import CTASection from '@/components/sections/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Web Development Islamabad & Custom Software Solutions | SixByte Technologies',
+  title: 'SixByte Technologies | Digital Solutions for Growing Businesses',
   description:
-    'SixByte Technologies delivers custom website design, Next.js web development in Islamabad, e-commerce development, and tailored software solutions that drive real growth.',
+    'SixByte Technologies delivers custom software, mobile apps, e-commerce platforms, and tailored digital solutions that drive real growth.',
 }
 
 export default function HomePage() {
@@ -31,7 +31,7 @@ export default function HomePage() {
       <PortfolioPreview />
       <PricingPreviewSection />
       <IndustriesSection />
-      <TestimonialsSection limit={3} />
+      <TestimonialsSection />
       <CTASection />
     </>
   )

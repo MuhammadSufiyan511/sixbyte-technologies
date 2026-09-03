@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: `${siteConfig.name} | ${siteConfig.tagline}`,
     description:
-      'We build credible digital experiences that help businesses win trust, convert better, and grow with clarity.',
+      'We build software systems, mobile apps, and digital platforms that help businesses win trust, convert better, and grow with clarity.',
     images: [
       {
         url: siteConfig.ogImage,
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: `${siteConfig.name} | ${siteConfig.tagline}`,
-    description: 'Smart websites and digital systems for growing businesses.',
+    description: 'Custom software, mobile apps, and digital systems for growing businesses.',
     images: [siteConfig.ogImage],
   },
   robots: {
@@ -60,6 +60,9 @@ export const metadata: Metadata = {
     icon: siteConfig.logo,
     shortcut: siteConfig.logo,
     apple: siteConfig.logo,
+  },
+  verification: {
+    google: 'fESq4uWPlZF3VaYWkdiB3K0fVKi7Fn6yA1BJEpxHhZs',
   },
 }
 

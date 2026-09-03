@@ -16,8 +16,8 @@ const companyLinks = [
   { label: 'About Us', href: '/about' },
   { label: 'Portfolio', href: '/portfolio' },
   { label: 'Industries', href: '/industries' },
-  { label: 'Testimonials', href: '/testimonials' },
-  { label: 'Pricing', href: '/pricing' },
+  { label: 'Pricing', href: '/#pricing' },
+  { label: 'Testimonials', href: '/#testimonials' },
   { label: 'Blog', href: '/blog' },
 ]
 
@@ -62,7 +62,7 @@ export default function Footer() {
             </Link>
 
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
-              Smart websites, refined branding, and digital systems built to help real businesses grow with clarity and confidence.
+              Custom software, mobile apps, e-commerce, and digital systems built to help real businesses grow with clarity and confidence.
             </p>
 
             <div className="mt-6 flex items-center gap-3">

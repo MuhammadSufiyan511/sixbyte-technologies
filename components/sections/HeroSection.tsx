@@ -62,12 +62,12 @@ export default function HeroSection() {
             <Stagger>
               <StaggerItem>
                 <div className="mb-4">
-                  <AnimatedTagHeader tag="WEB DEVELOPMENT ISLAMABAD & DIGITAL AGENCY" />
+                  <AnimatedTagHeader tag="DIGITAL AGENCY & SOFTWARE HOUSE" />
                 </div>
                 <h1 className="text-3xl font-bold leading-tight tracking-tight text-navy sm:text-5xl lg:text-5xl dark:text-white">
                   We build{' '}
                   <span className="relative inline-block text-teal dark:text-teal-light">
-                    high-converting custom websites
+                    digital solutions
                     <svg
                       className="absolute -bottom-2.5 left-0 h-3.5 w-full text-teal dark:text-teal-light overflow-visible"
                       viewBox="0 0 100 12"
@@ -89,27 +89,23 @@ export default function HeroSection() {
                       />
                     </svg>
                   </span>{' '}
-                  and digital systems that scale.
+                  that move your business forward.
                 </h1>
               </StaggerItem>
 
               <StaggerItem>
                 <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg dark:text-slate-300">
-                  Leading web development in Islamabad and globally. From custom website design and Next.js development to e-commerce development on Shopify, we engineer fast, SEO optimized platforms that turn visitors into paying clients.
+                  From business websites and online stores to mobile apps and custom software, we create simple, easy to use digital solutions for growing companies.
                 </p>
               </StaggerItem>
 
               <StaggerItem>
                 <div className="mt-6 flex flex-wrap gap-4">
-                  {[
-                    'Custom website design & Next.js',
-                    'Shopify e-commerce development',
-                    'SEO optimized & high speed',
-                  ].map((item) => (
+                  {highlights.map((item) => (
                     <motion.div
                       key={item}
                       whileHover={{ scale: 1.03, x: 2 }}
-                      className="inline-flex items-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300"
+                      className="inline-flex items-center gap-2 text-xs font-medium text-slate-700 dark:text-slate-300"
                     >
                       <CheckCircle2 className="h-4 w-4 text-teal shrink-0" />
                       {item}

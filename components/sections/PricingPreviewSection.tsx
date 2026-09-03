@@ -8,7 +8,7 @@ import { Reveal } from '@/components/animations/Motion'
 
 export default function PricingPreviewSection() {
   return (
-    <section className="bg-slate-50/70 py-10 dark:bg-slate-950/80 lg:py-14">
+    <section id="pricing" className="scroll-mt-24 bg-slate-50/70 py-10 dark:bg-slate-950/80 lg:py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <SectionHeader
@@ -70,27 +70,18 @@ export default function PricingPreviewSection() {
 
               <div className="mt-8 pt-4">
                 <Link
-                  href="/pricing"
+                  href="/contact"
                   className={`w-full justify-center ${
                     plan.highlighted
                       ? 'btn-primary bg-teal hover:bg-teal-light text-white'
                       : 'btn-primary'
                   }`}
                 >
-                  View Full Package Details <ArrowRight className="h-4 w-4" />
+                  Get Started <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-10 text-center">
-          <Link
-            href="/pricing"
-            className="inline-flex items-center gap-2 text-xs font-semibold text-teal hover:underline dark:text-teal-light"
-          >
-            Compare all package features & FAQs on our dedicated Pricing Page <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
         </div>
       </div>
     </section>

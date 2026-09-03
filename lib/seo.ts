@@ -23,10 +23,7 @@ export const WEBSITE_ID = `${siteUrl}/#website`
  * Organization / LocalBusiness node.
  *
  * Typed as ProfessionalService (a LocalBusiness subtype) because SixByte is a
- * service business with a real base (Islamabad's I-8 sector) but serves clients
- * remotely and internationally — evidenced by live client sites on .de/.my/.com
- * domains. Address and geo are intentionally sector-level (see lib/site.ts) and
- * should be refined to an exact pin once a public office address is confirmed.
+ * service business serving clients remotely and internationally.
  * priceRange, foundingDate, numberOfEmployees and aggregateRating are
  * deliberately omitted until verified.
  */

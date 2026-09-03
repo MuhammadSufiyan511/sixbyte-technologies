@@ -53,7 +53,7 @@ export const serviceContent: Record<string, ServiceContent> = {
     slug: 'web-dev',
     metaTitle: 'Website Development Services',
     metaDescription:
-      'Custom website development for growing businesses — fast, mobile first, SEO ready sites built to convert. Based in Islamabad, working with clients worldwide.',
+      'Custom website development for growing businesses — fast, mobile first, SEO ready sites built to convert.',
     heroTitle: 'Website development that turns visitors into customers',
     heroSubtitle:
       'We design and build custom, fast loading websites that make your business look credible and guide people toward taking action.',
@@ -108,7 +108,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       'business website',
       'responsive web design',
       'Next.js development',
-      'web developer Islamabad',
+      'custom web development',
     ],
   },
 

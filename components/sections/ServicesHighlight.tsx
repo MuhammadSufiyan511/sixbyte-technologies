@@ -39,7 +39,7 @@ export default function ServicesHighlight() {
               Custom Web Development, Shopify & Software Solutions.
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-              From Next.js web development in Islamabad to high-converting Shopify e-commerce stores and custom business software, we engineer digital platforms that scale.
+              From Next.js web development to high-converting Shopify e-commerce stores and custom business software, we engineer digital platforms that scale.
             </p>
           </div>
 

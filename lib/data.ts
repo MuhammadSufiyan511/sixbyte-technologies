@@ -3,12 +3,10 @@ import type { Service, Project, Testimonial, PricingPlan, BlogPost, Industry, Na
 export const navLinks: NavLink[] = [
   { label: 'About', href: '/about' },
   { label: 'Services', href: '/services' },
+  { label: 'Pricing', href: '/#pricing' },
   { label: 'Portfolio', href: '/portfolio' },
-  { label: 'Pricing', href: '/pricing' },
-  { label: 'Testimonials', href: '/testimonials' },
   { label: 'Industries', href: '/industries' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Contact', href: '/contact' },
 ]
 
 export const services: Service[] = [
@@ -20,7 +18,7 @@ export const services: Service[] = [
     icon: 'code',
     features: [
       'Custom website design & Next.js development',
-      'Full stack web development in Islamabad & globally',
+      'Full stack web development & digital systems',
       'Core Web Vitals & technical SEO optimization',
       'API design, CMS, and database integrations',
       'Responsive, mobile ready user experience',
