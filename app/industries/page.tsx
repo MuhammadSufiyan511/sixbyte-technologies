@@ -50,8 +50,8 @@ export default function IndustriesPage() {
       />
       <PageHero
         tag="Industry expertise"
-        title="We shape websites around the needs of the industry, not the other way around."
-        subtitle="A restaurant, clinic, or law firm does not need the same kind of website. We tailor the structure and message so the site makes sense for the people who will use it."
+        title="We shape digital platforms & systems around the needs of the industry, not the other way around."
+        subtitle="A restaurant, clinic, store, or law firm does not need the same kind of platform. We tailor the structure, features, and messaging so the system makes sense for the people who will use it."
         chips={['Restaurants', 'Healthcare', 'Real estate']}
         panelTitle="Tailored systems"
         panelBody="Different industries need different journeys. We structure the experience around trust, clarity, and conversion."

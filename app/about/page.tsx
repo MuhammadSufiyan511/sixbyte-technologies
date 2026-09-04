@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Award, CheckCircle2, HeartHandshake, ShieldCheck, Target, TrendingUp, Users } from 'lucide-react'
+import { Award, CheckCircle2, HeartHandshake, ShieldCheck, Target } from 'lucide-react'
 import CTASection from '@/components/sections/CTASection'
 import PageHero from '@/components/sections/PageHero'
 import SectionHeader from '@/components/ui/SectionHeader'
@@ -50,8 +50,8 @@ const milestones = [
   },
   {
     year: '2026',
-    title: 'A stronger, more complete team',
-    description: 'We continue to grow with a sharper design system, better process, and a stronger focus on business outcomes.',
+    title: 'A stronger complete team',  
+    description: 'We continue to grow with a sharper design system and a stronger focus on business outcomes.',
   },
 ]
 
@@ -262,9 +262,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Modern Vertical Animated Timeline / Milestones */}
-      <section className="relative overflow-hidden py-10 lg:py-14">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      {/* Modern Alternating Vertical Timeline / Milestones */}
+      <section className="relative overflow-hidden py-10 lg:py-14  ">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 ">
           <Reveal>
             <SectionHeader
               tag="Our story"
@@ -274,11 +274,11 @@ export default function AboutPage() {
             />
           </Reveal>
 
-          <div className="relative mt-20">
-            {/* Scroll-Activated Continuous Vertical Timeline Line */}
+          <div className="relative mt-16 sm:mt-20 ">
+            {/* Center Vertical Timeline Line */}
             <motion.div
-              className="absolute left-6 sm:left-1/2 top-3 bottom-3 w-0.5 -translate-x-1/2 bg-gradient-to-b from-[#0F766E] via-teal-500/50 to-[#0F766E]/10"
-              initial={{ scaleY: 0 }}
+              className="absolute left-6 sm:left-1/2 top-4 bottom-4 w-[2px] -translate-x-1/2 bg-[#0F766E]/40 dark:bg-teal-500/40"
+              initial={{ scaleY: 0, transformOrigin: 'top' }}
               whileInView={{ scaleY: 1 }}
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
@@ -286,58 +286,71 @@ export default function AboutPage() {
 
             <div className="space-y-12 sm:space-y-16">
               {milestones.map((item, idx) => {
-                const isEven = idx % 2 === 0
+                const isLeft = idx % 2 === 0
+
                 return (
                   <div
                     key={item.year}
-                    className="relative flex flex-col sm:flex-row items-center"
+                    className="relative flex flex-col sm:flex-row items-center "
                   >
-                    {/* Timeline Center Pulse Node */}
+                    {/* Centered Pulse Dot Node on Vertical Line */}
                     <motion.div
                       initial={{ scale: 0, opacity: 0 }}
                       whileInView={{ scale: 1, opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: idx * 0.15 }}
-                      className="absolute left-6 sm:left-1/2 -translate-x-1/2 flex h-7 w-7 items-center justify-center rounded-full border border-[#0F766E] bg-white dark:bg-[#0E1A2E] shadow-[0_0_12px_rgba(15,118,110,0.3)] z-10"
+                      className="absolute left-[7px]  top-[69px] sm:left-[463px]  sm:top-[64px] -translate-x-1/2 -translate-y-1/2 flex h-9 w-9 items-center justify-center rounded-full border border-[#0F766E]/40 bg-teal-500/10 shadow-[0_0_14px_rgba(15,118,110,0.25)] z-20"
                     >
-                      <span className="h-2 w-2 rounded-full bg-[#0F766E]" />
+                      <span className="h-3.5 w-3.5 rounded-full bg-[#0F766E] dark:bg-teal-400 animate-pulse" />
                     </motion.div>
+
+                    {/* Horizontal Connector Arm (Desktop) */}
+                    <div
+                      className="hidden sm:block absolute top-1/2 h-[2px] bg-[#0F766E]/60 dark:bg-teal-400/60 -translate-y-1/2 z-10"
+                      style={
+                        isLeft
+                          ? { right: 'calc(50% + 18px)', width: 'calc(3rem - 18px)' }
+                          : { left: 'calc(50% + 18px)', width: 'calc(3rem - 18px)' }
+                      }
+                    />
+
+                    {/* Horizontal Connector Arm (Mobile) */}
+                    <div
+                      className="sm:hidden absolute top-1/2 h-[2px] bg-[#0F766E]/60 dark:bg-teal-400/60 -translate-y-1/2 z-10"
+                      style={{ left: 'calc(1.5rem + 18px)', width: 'calc(2.5rem - 18px)' }}
+                    />
 
                     {/* Milestone Content Card */}
                     <div
-                      className={`w-full sm:w-1/2 ${
-                        isEven
-                          ? 'sm:pr-12 lg:pr-16 text-left sm:text-right'
-                          : 'sm:pl-12 lg:pl-16 sm:ml-auto text-left'
+                      className={`w-full sm:w-[calc(50%-3rem)] ${
+                        isLeft
+                          ? 'sm:mr-auto'
+                          : 'sm:ml-auto'
                       } pl-16 sm:pl-0`}
                     >
                       <Reveal delay={idx * 0.12}>
-                        <motion.div
+                        <motion.article
                           whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                          className="surface-card group rounded-2xl p-6 sm:p-7 shadow-md border border-slate-200/80 dark:border-slate-800 transition-all duration-300 hover:border-[#0F766E]/40 dark:hover:border-teal-500/40 hover:shadow-xl"
+                          className="surface-card group rounded-2xl bg-white p-6 sm:p-7 shadow-[0_4px_25px_rgba(0,0,0,0.05)] border border-slate-200/80 dark:border-slate-800 dark:bg-slate-900 transition-all duration-300 hover:border-[#0F766E]/40 hover:shadow-xl text-left"
                         >
-                          <div
-                            className={`flex items-center gap-3 ${
-                              isEven ? 'sm:justify-end' : 'justify-start'
-                            }`}
-                          >
+                          <div className="flex items-center gap-3 text-left">
                             <span className="font-mono text-xs font-bold tracking-widest text-[#0F766E] dark:text-teal-400">
                               MILESTONE 0{idx + 1}
                             </span>
                             <span className="h-1 w-1 rounded-full bg-slate-300 dark:bg-slate-700" />
-                            <span className="inline-block rounded-md bg-[#0F766E]/10 dark:bg-teal-500/10 px-2.5 py-0.5 font-mono text-xs font-extrabold text-[#0F766E] dark:text-teal-300">
+                            <span className="inline-block rounded-md bg-[#0F766E]/10 px-2.5 py-0.5 font-mono text-xs font-extrabold text-[#0F766E] dark:bg-teal-500/10 dark:text-teal-300">
                               {item.year}
                             </span>
                           </div>
 
-                          <h3 className="mt-3 text-lg sm:text-xl font-bold text-navy dark:text-white group-hover:text-[#0F766E] dark:group-hover:text-teal-300 transition-colors">
+                          <h3 className="mt-3 text-lg sm:text-xl font-bold text-navy dark:text-white group-hover:text-[#0F766E] dark:group-hover:text-teal-300 transition-colors text-left">
                             {item.title}
                           </h3>
 
-                          <p className="mt-2 text-xs sm:text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                          <p className="mt-2 text-xs sm:text-sm leading-relaxed text-slate-600 dark:text-slate-300 text-left">
                             {item.description}
                           </p>
-                        </motion.div>
+                        </motion.article>
                       </Reveal>
                     </div>
                   </div>

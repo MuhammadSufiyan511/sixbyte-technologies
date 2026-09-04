@@ -220,7 +220,7 @@ export default function IndustryDetailPage({ params }: Props) {
       </section>
 
       <CTASection
-        title={`Ready for a website built for ${industry.name.toLowerCase()}?`}
+        title={`Ready for a digital platform built for ${industry.name.toLowerCase()}?`}
         subtitle="Book a free consultation and we&apos;ll shape an approach that fits your business."
       />
     </>

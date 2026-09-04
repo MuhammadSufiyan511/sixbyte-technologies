@@ -57,9 +57,13 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: siteConfig.logo,
-    shortcut: siteConfig.logo,
-    apple: siteConfig.logo,
+    icon: [
+      { url: '/assets/circular-logo.png', type: 'image/png' },
+      { url: '/assets/circular-logo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/assets/circular-logo.png', sizes: '192x192', type: 'image/png' },
+    ],
+    shortcut: '/assets/circular-logo.png',
+    apple: '/assets/circular-logo.png',
   },
   verification: {
     google: 'fESq4uWPlZF3VaYWkdiB3K0fVKi7Fn6yA1BJEpxHhZs',
@@ -70,6 +74,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={plusJakarta.variable} suppressHydrationWarning>
       <head>
+        {/* Favicon & Google Search Result Brand Logo */}
+        <link rel="icon" href="/assets/circular-logo.png" type="image/png" />
+        <link rel="shortcut icon" href="/assets/circular-logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/assets/circular-logo.png" />
+
         {/* Blocking script — runs before first paint to prevent FOUC on dark mode */}
         <script
           dangerouslySetInnerHTML={{

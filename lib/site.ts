@@ -13,7 +13,7 @@ export const siteConfig = {
   name: 'SixByte Technologies',
   shortName: 'SixByte',
   url: siteUrl,
-  tagline: 'Digital Solutions for Growing Businesses',
+  tagline: 'Custom Web Development, Software & Digital Solutions',
   description:
     'SixByte Technologies designs and builds custom software, mobile apps, e-commerce platforms, and digital systems that help businesses scale with confidence.',
 
@@ -38,7 +38,7 @@ export const siteConfig = {
   mapLink: '',
 
   // Assets
-  logo: '/assets/SixByte_standalone-removebg-preview.webp',
+  logo: '/assets/circular-logo.png',
   ogImage: '/assets/hero_ecosystem.png',
 
   // Social profiles

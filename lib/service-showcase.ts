@@ -22,7 +22,7 @@ export const servicePreviewMeta: Record<string, ServicePreviewMeta> = {
   wordpress: {
     tagline: 'Content systems',
     focus: 'Custom WordPress sites',
-    outcome: 'Easier editing and faster pages',
+    outcome: 'Faster content workflows',
     format: 'Theme based builds',
     summary:
       'We make WordPress feel lighter and more intentional with custom templates, cleaner structure, and better performance.',
@@ -33,7 +33,7 @@ export const servicePreviewMeta: Record<string, ServicePreviewMeta> = {
     tagline: 'Commerce systems',
     focus: 'Premium Shopify stores',
     outcome: 'Clearer product journeys',
-    format: 'Storefront customization',
+    format: 'Custom storefronts',
     summary:
       'We tailor Shopify stores so they feel more polished, easier to navigate, and more ready to convert visitors into buyers.',
     bullets: ['Custom sections', 'Product storytelling', 'Checkout polish'],
@@ -113,7 +113,7 @@ export const servicePreviewMeta: Record<string, ServicePreviewMeta> = {
     tagline: 'AI workflows',
     focus: 'Automation and intelligence',
     outcome: 'Smarter product experiences',
-    format: 'LLM powered integrations',
+    format: 'LLM integrations',
     summary:
       'We add AI features and workflows that help teams automate repetitive work and unlock better product capabilities.',
     bullets: ['AI features', 'Workflow automation', 'Model integrations'],
