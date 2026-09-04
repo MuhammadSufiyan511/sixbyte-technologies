@@ -13,9 +13,14 @@ import TestimonialsSection from '@/components/sections/TestimonialsSection'
 import CTASection from '@/components/sections/CTASection'
 
 export const metadata: Metadata = {
-  title: 'SixByte Technologies | Digital Solutions for Growing Businesses',
+  title: 'Custom Web Development, Software & Digital Solutions for Growing Businesses',
   description:
-    'SixByte Technologies delivers custom software, mobile apps, e-commerce platforms, and tailored digital solutions that drive real growth.',
+    'SixByte Technologies delivers custom software, mobile apps, e-commerce platforms, and tailored digital solutions that drive real growth for businesses worldwide.',
+  openGraph: {
+    title: 'SixByte Technologies | Custom Web Development & Digital Solutions',
+    description:
+      'SixByte Technologies delivers custom software, mobile apps, e-commerce platforms, and tailored digital solutions that drive real growth for businesses worldwide.',
+  },
 }
 
 export default function HomePage() {

@@ -7,7 +7,7 @@
  * value (e.g. 'https://www.sixbyte.tech') and canonical URLs, Open Graph tags,
  * Twitter cards, sitemap, and JSON-LD structured data update site-wide.
  */
-export const siteUrl = 'https://sixbyte.example.com'
+export const siteUrl = 'https://sixbytetechnologies.com'
 
 export const siteConfig = {
   name: 'SixByte Technologies',
