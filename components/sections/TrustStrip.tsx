@@ -59,7 +59,7 @@ function AnimatedCount({ target, prefix = '', suffix = '' }: { target: number; p
 
 export default function TrustStrip() {
   return (
-    <section className="border-y border-slate-200/80 bg-white py-10 dark:border-slate-800 dark:bg-slate-900">
+    <section className="border-y border-slate-200/80 bg-white py-5 sm:py-8 dark:border-slate-800 dark:bg-slate-900 lg:py-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:divide-x sm:divide-slate-200 dark:sm:divide-slate-800">
           {stats.map((stat, idx) => (

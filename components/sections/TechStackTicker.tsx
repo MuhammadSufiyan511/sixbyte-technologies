@@ -36,7 +36,7 @@ const doubleTech = [...techStack, ...techStack, ...techStack]
 
 export default function TechStackTicker() {
   return (
-    <div className="group relative overflow-hidden border-y border-slate-200/80 bg-white/70 py-4 backdrop-blur-sm dark:border-slate-800/80 dark:bg-slate-950/70">
+    <div className="group relative overflow-hidden border-y border-slate-200/80 bg-white/70 py-3 backdrop-blur-sm dark:border-slate-800/80 dark:bg-slate-950/70 sm:py-4">
       {/* Gradient Mask for fading left and right edges */}
       <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-gradient-to-r from-white dark:from-slate-950 to-transparent" />
       <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-20 bg-gradient-to-l from-white dark:from-slate-950 to-transparent" />

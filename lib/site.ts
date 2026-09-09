@@ -13,7 +13,7 @@ export const siteConfig = {
   name: 'SixByte Technologies',
   shortName: 'SixByte',
   url: siteUrl,
-  tagline: 'Custom Web Development, Software & Digital Solutions',
+  tagline: 'Digital Platforms, Custom Software & Mobile Solutions',
   description:
     'SixByte Technologies designs and builds custom software, mobile apps, e-commerce platforms, and digital systems that help businesses scale with confidence.',
 
