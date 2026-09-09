@@ -87,7 +87,7 @@ Create a `.env.local` file and add:
 ```bash
 RESEND_API_KEY=your_resend_api_key
 CONTACT_FROM_EMAIL=Website Leads <onboarding@resend.dev>
-CONTACT_TO_EMAIL=contact.sixbyte@gmail.com
+CONTACT_TO_EMAIL=contact@sixbytetechnologies.com
 ```
 
 Notes:

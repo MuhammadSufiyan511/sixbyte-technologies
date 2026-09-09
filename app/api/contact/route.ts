@@ -31,15 +31,15 @@ export async function POST(req: Request) {
     }
 
     const resendApiKey = process.env.RESEND_API_KEY
-    const toEmail = process.env.CONTACT_TO_EMAIL?.trim() || 'contact.sixbyte@gmail.com'
-    let fromEmail = process.env.CONTACT_FROM_EMAIL?.trim() || 'onboarding@resend.dev'
+    const toEmail = process.env.CONTACT_TO_EMAIL?.trim() || 'contact@sixbytetechnologies.com'
+    let fromEmail = process.env.CONTACT_FROM_EMAIL?.trim() || 'SixByte Leads <contact@sixbytetechnologies.com>'
 
     // Remove wrapping quotes if present from env var
     fromEmail = fromEmail.replace(/^["']|["']$/g, '')
 
-    // Ensure fallback to onboarding@resend.dev if empty or invalid format
+    // Ensure fallback if empty or invalid format
     if (!fromEmail || (!fromEmail.includes('@') && !fromEmail.includes('<'))) {
-      fromEmail = 'onboarding@resend.dev'
+      fromEmail = 'SixByte Leads <contact@sixbytetechnologies.com>'
     }
 
     if (!resendApiKey) {

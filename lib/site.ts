@@ -18,7 +18,7 @@ export const siteConfig = {
     'SixByte Technologies designs and builds custom software, mobile apps, e-commerce platforms, and digital systems that help businesses scale with confidence.',
 
   // Contact details (used across footer, contact page, CTAs, and structured data)
-  email: 'contact.sixbyte@gmail.com',
+  email: 'contact@sixbytetechnologies.com',
   phoneDisplay: '0329 5147621',
   phoneTel: '+923295147621',
   whatsappNumber: '923295147621',
