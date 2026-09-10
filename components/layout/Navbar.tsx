@@ -80,16 +80,16 @@ export default function Navbar() {
             <Image
               src="/assets/SixByte_standalone-removebg-preview.webp"
               alt="SixByte Technologies Logo"
-              width={40}
-              height={40}
-              className="h-10 w-10 object-contain"
+              width={52}
+              height={52}
+              className="h-14 w-14 object-contain"
               priority
             />
             <div className="leading-none">
-              <span className="block text-base font-extrabold tracking-tight text-navy uppercase dark:text-white">
+              <span className="block text-lg font-extrabold tracking-tight text-navy uppercase dark:text-white">
                 SixByte
               </span>
-              <span className="mt-0.5 block text-[10px] font-semibold tracking-widest text-teal uppercase">
+              <span className="mt-0.5 block text-xs font-semibold tracking-widest text-teal uppercase">
                 Technologies
               </span>
             </div>
@@ -177,11 +177,11 @@ export default function Navbar() {
                   <Image
                     src="/assets/SixByte_standalone-removebg-preview.webp"
                     alt="SixByte Technologies"
-                    width={32}
-                    height={32}
-                    className="h-8 w-8 object-contain"
+                    width={40}
+                    height={40}
+                    className="h-10 w-10 object-contain"
                   />
-                  <span className="text-sm font-bold text-navy dark:text-white">SixByte</span>
+                  <span className="text-base font-bold text-navy dark:text-white">SixByte</span>
                 </div>
 
                 <button

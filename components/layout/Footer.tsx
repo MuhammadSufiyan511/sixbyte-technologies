@@ -47,15 +47,15 @@ export default function Footer() {
               <Image
                 src="/assets/SixByte_standalone-removebg-preview.webp"
                 alt="SixByte Technologies"
-                width={40}
-                height={40}
-                className="h-10 w-10 object-contain"
+                width={52}
+                height={52}
+                className="h-14 w-14 object-contain"
               />
               <div className="leading-none">
-                <span className="block text-base font-extrabold tracking-tight text-white uppercase">
+                <span className="block text-lg font-extrabold tracking-tight text-white uppercase">
                   SixByte
                 </span>
-                <span className="mt-0.5 block text-[10px] font-semibold tracking-widest text-teal uppercase">
+                <span className="mt-0.5 block text-xs font-semibold tracking-widest text-teal uppercase">
                   Technologies
                 </span>
               </div>
