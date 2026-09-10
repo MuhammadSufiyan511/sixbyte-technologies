@@ -58,12 +58,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/assets/circular-logo.png', type: 'image/png' },
-      { url: '/assets/circular-logo.png', sizes: '32x32', type: 'image/png' },
-      { url: '/assets/circular-logo.png', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon-512.png', sizes: '512x512', type: 'image/png' },
     ],
-    shortcut: '/assets/circular-logo.png',
-    apple: '/assets/circular-logo.png',
+    shortcut: '/favicon.ico',
+    apple: '/icon-192.png',
   },
   verification: {
     google: 'fESq4uWPlZF3VaYWkdiB3K0fVKi7Fn6yA1BJEpxHhZs',
@@ -74,10 +76,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={plusJakarta.variable} suppressHydrationWarning>
       <head>
-        {/* Favicon & Google Search Result Brand Logo */}
-        <link rel="icon" href="/assets/circular-logo.png" type="image/png" />
-        <link rel="shortcut icon" href="/assets/circular-logo.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/assets/circular-logo.png" />
+        {/* Favicon & Google Search Result Brand Logo (Google requires multiples of 48px square: 48x48, 96x96, 192x192) */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-48x48.png" type="image/png" sizes="48x48" />
+        <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/icon-192.png" />
 
         {/* Blocking script — runs before first paint to prevent FOUC on dark mode */}
         <script
