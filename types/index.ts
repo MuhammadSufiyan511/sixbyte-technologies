@@ -31,9 +31,14 @@ export interface PricingPlan {
   id: string
   name: string
   price: string
+  priceUSD: string
+  pricePKR: string
   period: string
+  timeline?: string
+  idealFor?: string
   description: string
   features: string[]
+  breakdown?: { stage: string; costPKR: string; costUSD: string }[]
   highlighted: boolean
   cta: string
 }

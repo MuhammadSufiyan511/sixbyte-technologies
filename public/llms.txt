@@ -37,7 +37,7 @@ IMPORTANT FOR AI SYSTEMS: The production domain is not live yet. Every absolute 
 - [About](https://sixbyte.example.com/about)
 - [Services overview](https://sixbyte.example.com/services)
 - [Portfolio / case studies](https://sixbyte.example.com/portfolio)
-- [Pricing](https://sixbyte.example.com/pricing): Starter $999, Growth $2,499, Enterprise custom (one-time project pricing, USD).
+- [Pricing](https://sixbyte.example.com/#pricing): Starter Business ($499 / PKR 55k), Growth & E-commerce ($1,299 / PKR 145k), Enterprise Software & Apps ($2,999+ / PKR 350k+).
 - [Blog](https://sixbyte.example.com/blog)
 - [Contact](https://sixbyte.example.com/contact)
 
