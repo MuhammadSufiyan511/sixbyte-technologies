@@ -51,7 +51,6 @@ export default function PricingPreviewSection() {
                     : 'text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white'
                 }`}
               >
-                <span className="text-sm leading-none">🇵🇰</span>
                 Pakistan Market (PKR)
               </button>
 
@@ -74,8 +73,8 @@ export default function PricingPreviewSection() {
           </div>
         </Reveal>
 
-        {/* Pricing Cards Grid */}
-        <div className="mt-12 grid gap-8 lg:grid-cols-3 lg:items-start">
+        {/* Pricing Cards Grid (Stretched to equal height) */}
+        <div className="mt-12 grid gap-8 lg:grid-cols-3 lg:items-stretch">
           {pricingPlans.map((plan) => {
             const displayPrice = currency === 'USD' ? plan.priceUSD : plan.pricePKR
             const isExpanded = openBreakdown === plan.id
@@ -83,7 +82,7 @@ export default function PricingPreviewSection() {
             return (
               <div
                 key={plan.id}
-                className={`relative flex flex-col justify-between rounded-2xl p-6 sm:p-8 transition-all duration-300 ${
+                className={`relative flex h-full flex-col justify-between rounded-2xl p-6 sm:p-8 transition-all duration-300 ${
                   plan.highlighted
                     ? 'bg-[#0E1A2E] text-white shadow-2xl ring-2 ring-teal dark:bg-slate-900'
                     : 'surface-card border border-slate-200/90 shadow-md hover:border-teal/50 dark:border-slate-800'
@@ -109,28 +108,17 @@ export default function PricingPreviewSection() {
                     {plan.description}
                   </p>
 
-                  {/* Ideal For Badge */}
-                  {plan.idealFor && (
-                    <div className={`mt-3 rounded-lg p-2.5 text-[11px] font-medium leading-normal ${
-                      plan.highlighted
-                        ? 'bg-slate-800/80 text-slate-300 border border-slate-700/60'
-                        : 'bg-slate-100/90 text-slate-700 border border-slate-200/60 dark:bg-slate-800/60 dark:text-slate-300 dark:border-slate-700/50'
-                    }`}>
-                      <span className="font-bold text-teal">Target:</span> {plan.idealFor}
-                    </div>
-                  )}
-
                   {/* Price & Timeline Box */}
                   <div className="my-6 border-y border-slate-200/20 py-4">
-                    <div className="flex items-baseline justify-between">
-                      <div className={`text-3xl font-black tracking-tight ${plan.highlighted ? 'text-white' : 'text-navy dark:text-white'}`}>
+                    <div className="flex flex-wrap items-baseline justify-between gap-2">
+                      <div className={`text-2xl sm:text-3xl font-black tracking-tight shrink-0 ${plan.highlighted ? 'text-white' : 'text-navy dark:text-white'}`}>
                         {displayPrice}
                       </div>
                       {plan.timeline && (
-                        <div className={`inline-flex items-center gap-1 text-[11px] font-semibold ${
+                        <div className={`inline-flex items-center gap-1 text-[11px] font-semibold shrink-0 ${
                           plan.highlighted ? 'text-teal-light' : 'text-teal dark:text-teal-light'
                         }`}>
-                          <Clock className="h-3.5 w-3.5" />
+                          <Clock className="h-3.5 w-3.5 shrink-0" />
                           {plan.timeline}
                         </div>
                       )}

@@ -389,7 +389,7 @@ export const pricingPlans: PricingPlan[] = [
     priceUSD: '$1,100',
     pricePKR: 'PKR 300,000',
     period: 'full-scope proposal budget',
-    timeline: '7 Weeks (Includes 1-Month Support)',
+    timeline: '7 Weeks',
     idealFor: 'Web applications, custom platforms, e-commerce stores, client portals & business software',
     description: 'Complete end-to-end full-stack digital application with custom database architecture, real-time business logic, payment gateways, and admin panel.',
     features: [
