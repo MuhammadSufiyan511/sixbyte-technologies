@@ -18,10 +18,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url('/services'), lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: url('/portfolio'), lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: url('/industries'), lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: url('/pricing'), lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: url('/testimonials'), lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: url('/blog'), lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: url('/contact'), lastModified: now, changeFrequency: 'yearly', priority: 0.7 },
+    { url: url('/privacy'), lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
+    { url: url('/terms'), lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
   ]
 
   const servicePages: MetadataRoute.Sitemap = services.map((service) => ({
